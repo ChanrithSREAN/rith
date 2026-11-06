@@ -1,0 +1,344 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chanrith SREAN | Heavenly King</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            background: #08090d;
+            color: #ffffff;
+        }
+
+        :root {
+            --gold: #d4af37;
+            --dark: #08090d;
+            --gray: #a1a1aa;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 25px 8%;
+            border-bottom: 1px solid #222;
+        }
+
+        .logo {
+            color: var(--gold);
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 25px;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            color: var(--gold);
+        }
+
+        .hero {
+            min-height: 90vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 30px;
+            background:
+                radial-gradient(circle at center,
+                #252015 0%, #08090d 65%);
+        }
+
+        .crown {
+            font-size: 70px;
+            margin-bottom: 20px;
+            animation: float 3s ease-in-out infinite;
+        }
+
+        .hero h1 {
+            font-size: clamp(40px, 8vw, 85px);
+            letter-spacing: 5px;
+            color: var(--gold);
+        }
+
+        .hero h2 {
+            font-size: 22px;
+            margin-top: 20px;
+            color: #ddd;
+        }
+
+        .hero p {
+            max-width: 600px;
+            color: var(--gray);
+            margin: 25px 0;
+            line-height: 1.8;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 14px 30px;
+            border: 1px solid var(--gold);
+            color: var(--gold);
+            text-decoration: none;
+            border-radius: 30px;
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            background: var(--gold);
+            color: #000;
+            transform: translateY(-3px);
+        }
+
+        section {
+            padding: 90px 8%;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 38px;
+            color: var(--gold);
+            margin-bottom: 50px;
+        }
+
+        .about {
+            max-width: 800px;
+            margin: auto;
+            text-align: center;
+            line-height: 2;
+            color: var(--gray);
+        }
+
+        .skills {
+            display: grid;
+            grid-template-columns:
+                repeat(auto-fit, minmax(180px, 1fr));
+            gap: 20px;
+        }
+
+        .skill-card {
+            background: #12131a;
+            border: 1px solid #282832;
+            padding: 30px;
+            text-align: center;
+            border-radius: 15px;
+            transition: 0.3s;
+        }
+
+        .skill-card:hover {
+            border-color: var(--gold);
+            transform: translateY(-8px);
+        }
+
+        .skill-card h3 {
+            color: var(--gold);
+            margin-bottom: 12px;
+        }
+
+        .skill-card p {
+            color: var(--gray);
+        }
+
+        .projects {
+            display: grid;
+            grid-template-columns:
+                repeat(auto-fit, minmax(250px, 1fr));
+            gap: 25px;
+        }
+
+        .project-card {
+            background: #12131a;
+            padding: 30px;
+            border-radius: 15px;
+            border: 1px solid #282832;
+        }
+
+        .project-card h3 {
+            color: var(--gold);
+            margin-bottom: 15px;
+        }
+
+        .project-card p {
+            color: var(--gray);
+            line-height: 1.7;
+        }
+
+        .project-card a {
+            display: inline-block;
+            margin-top: 20px;
+            color: var(--gold);
+            text-decoration: none;
+        }
+
+        footer {
+            text-align: center;
+            padding: 30px;
+            color: var(--gray);
+            border-top: 1px solid #222;
+        }
+
+        footer span {
+            color: var(--gold);
+        }
+
+        @keyframes float {
+            0%, 100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-15px);
+            }
+        }
+
+        @media (max-width: 600px) {
+            nav {
+                flex-direction: column;
+                gap: 20px;
+            }
+
+            nav a {
+                margin: 0 8px;
+                font-size: 14px;
+            }
+
+            .hero h1 {
+                letter-spacing: 2px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav>
+        <div class="logo">👑 CHANRITH</div>
+
+        <div>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <div class="crown">👑</div>
+
+        <h1>HEAVENLY KING</h1>
+
+        <h2>Chanrith SREAN | Software Engineer</h2>
+
+        <p>
+            A passionate Software Engineering student from Cambodia.
+            Exploring the world of programming, building creative
+            solutions, and turning ideas into reality.
+        </p>
+
+        <a class="btn"
+           href="https://github.com/ChanrithSREAN"
+           target="_blank">
+            Explore My GitHub →
+        </a>
+    </header>
+
+    <section id="about">
+        <h2 class="section-title">About Me</h2>
+
+        <div class="about">
+            <p>
+                Hello! I'm Chanrith, a first-year Software Engineering
+                student who loves technology and programming.
+                I'm currently building my foundation in computer
+                science, learning new skills, and developing
+                projects that help me grow as an engineer.
+            </p>
+            <br>
+            <p>
+                My mission is to become a professional software
+                engineer who creates meaningful and innovative
+                technology.
+            </p>
+        </div>
+    </section>
+
+    <section id="skills">
+        <h2 class="section-title">My Skills</h2>
+
+        <div class="skills">
+            <div class="skill-card">
+                <h3>💻 Programming</h3>
+                <p>Learning programming fundamentals</p>
+            </div>
+
+            <div class="skill-card">
+                <h3>🌐 HTML & CSS</h3>
+                <p>Building responsive web interfaces</p>
+            </div>
+
+            <div class="skill-card">
+                <h3>🧠 Problem Solving</h3>
+                <p>Developing logical thinking</p>
+            </div>
+
+            <div class="skill-card">
+                <h3>⚙️ Git & GitHub</h3>
+                <p>Learning version control</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <h2 class="section-title">My Projects</h2>
+
+        <div class="projects">
+            <div class="project-card">
+                <h3>👑 Personal Portfolio</h3>
+                <p>
+                    My personal website showcasing my journey
+                    as a software engineering student.
+                </p>
+
+                <a href="https://github.com/ChanrithSREAN"
+                   target="_blank">
+                    View GitHub →
+                </a>
+            </div>
+
+            <div class="project-card">
+                <h3>🚀 Future Projects</h3>
+                <p>
+                    I'm working toward creating innovative
+                    applications and real-world solutions.
+                </p>
+
+                <a href="https://github.com/ChanrithSREAN"
+                   target="_blank">
+                    Follow My Journey →
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>
+            Designed with <span>♥</span> by Chanrith SREAN
+        </p>
+        <p>© 2026 Heavenly King. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
